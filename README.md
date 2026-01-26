@@ -1,18 +1,73 @@
-# HTMLCamp - Interactive Web Development Learning Platform
+<div align="center">
 
-A modern, full-featured e-learning platform designed to teach web development through interactive lessons, real-time code editing, and AI-powered assistance.
+# 🚀 HTMLCamp
 
-![Platform Status](https://img.shields.io/badge/status-in%20development-blue)
-![License](https://img.shields.io/badge/license-proprietary-red)
-![Version](https://img.shields.io/badge/version-1.5-green)
+### Interactive Web Development Learning Platform
+
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-htmlcamp.free.nf-brightgreen?style=for-the-badge)](https://htmlcamp.free.nf/)
+[![Status](https://img.shields.io/badge/Status-In_Development-blue?style=for-the-badge)](#)
+[![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)](LICENSE)
+
+**A modern, full-featured e-learning platform designed to teach web development through interactive lessons, real-time code editing, and AI-powered assistance.**
+
+[🌐 Live Demo](https://htmlcamp.free.nf/) • [📸 Screenshots](screenshots/) • [📚 Docs](docs/) • [💻 Code](code-snippets/)
+
+</div>
 
 ---
 
-## 🎯 Project Overview
+## 🔗 Quick Access
 
-HTMLCamp is an advanced web development learning platform that combines traditional coursework with modern AI assistance and interactive coding environments. The platform was developed during the 2025-2026 academic year for educational purposes and continues to evolve with new features and improvements.
+| Resource | Description | Link |
+|----------|-------------|------|
+| 🌐 **Live Platform** | Try the platform yourself | **[htmlcamp.free.nf](https://htmlcamp.free.nf/)** |
+| 📸 **Screenshots** | Visual showcase | [View Gallery](screenshots/) |
+| 🏗️ **Architecture** | System design documentation | [Read More](docs/ARCHITECTURE.md) |
+| 💻 **Code Samples** | Implementation examples | [View Snippets](code-snippets/) |
+| 📚 **Tech Stack** | Technologies & justifications | [Read More](docs/TECHNOLOGIES.md) |
 
-**Note**: This is a **proprietary project** currently in active development. The full source code is not publicly available. This repository serves as a portfolio showcase with selected code snippets and project documentation.
+---
+
+## 🌐 Live Demonstration
+
+### **Experience HTMLCamp**: [https://htmlcamp.free.nf/](https://htmlcamp.free.nf/)
+
+The platform is fully functional and deployed for hands-on exploration.
+
+### What You Can Test
+
+✅ **User Registration** - Create your account and get started  
+✅ **Course Catalog** - Browse 9 technologies with 46+ courses  
+✅ **Interactive Lessons** - Learn with rich, structured content  
+✅ **Monaco Code Editor** - Professional editing powered by VS Code  
+✅ **AI Code Assistant** - Real-time help from CodeLlama  
+✅ **Progress Dashboard** - Track your learning journey with analytics  
+✅ **Exercise System** - Practice with coding challenges  
+✅ **Gamification** - Earn points, badges, and climb the leaderboard  
+
+### Demo Environment
+
+> **Hosting**: Free tier demonstration deployment  
+> **Purpose**: Portfolio showcase and testing  
+> **Note**: Performance optimized for demo. Production would use dedicated infrastructure.  
+> **Data**: May be reset periodically for maintenance
+
+---
+
+## 📚 Project Overview
+
+HTMLCamp is an advanced web development learning platform that combines traditional coursework with modern AI assistance and interactive coding environments. The platform was **developed during the 2025-2026 academic year for educational purposes** and continues to evolve with new features and improvements.
+
+### Key Highlights
+
+- **Full-Stack Application**: PHP backend, JavaScript frontend, MySQL database
+- **AI Integration**: CodeLlama model for intelligent programming assistance
+- **Professional Tools**: Monaco Editor (VS Code engine) for code editing
+- **Real-Time Analytics**: Chart.js powered dashboards and progress tracking
+- **Gamification**: Points, achievements, and competitive leaderboards
+- **Modern Architecture**: Clean separation of concerns, secure by design
+
+**Important**: This is a **proprietary project** currently in active development. The full source code is not publicly available. This repository serves as a **portfolio showcase** with selected code snippets, comprehensive documentation, and a [live demonstration](https://htmlcamp.free.nf/).
 
 ---
 
@@ -21,19 +76,19 @@ HTMLCamp is an advanced web development learning platform that combines traditio
 ### 📚 **Comprehensive Course System**
 - Structured learning paths across 9 web technologies
 - Progressive difficulty levels (Beginner → Intermediate → Advanced)
-- 46+ courses with detailed lessons and exercises
+- 46+ courses with 200+ detailed lessons
 - Real-world project-based learning
 
 ### 💻 **Advanced Code Editor**
 - Monaco Editor integration (VS Code engine)
-- Syntax highlighting and auto-completion
-- Live code preview
+- Syntax highlighting for 50+ languages
+- IntelliSense auto-completion
+- Live code preview and execution
 - Built-in JavaScript console
-- Multi-file editing support
 - Dark/Light theme switching
 
 ### 🤖 **AI-Powered Learning Assistant**
-- CodeLlama integration for intelligent code help
+- CodeLlama integration for intelligent help
 - Context-aware programming assistance
 - Code error detection and suggestions
 - Natural language code explanations
@@ -55,10 +110,10 @@ HTMLCamp is an advanced web development learning platform that combines traditio
 
 ### 🔐 **Robust Security**
 - Secure authentication system
-- Session management
-- CSRF protection
-- SQL injection prevention
-- XSS filtering
+- Session management with httpOnly cookies
+- CSRF protection on all forms
+- SQL injection prevention (prepared statements)
+- XSS filtering and input validation
 - Rate limiting on API endpoints
 
 ---
@@ -77,11 +132,11 @@ HTMLCamp is an advanced web development learning platform that combines traditio
 - **Chart.js** - Data visualization and analytics
 
 ### **AI Integration**
-- **HuggingFace API** - CodeLlama model integration
-- **Custom RAG System** - Context-aware AI responses
-- **Caching Layer** - Optimized AI response times
+- **HuggingFace API** - CodeLlama model hosting
+- **Custom Caching** - Optimized AI response times
+- **Context System** - Lesson-aware assistance
 
-### **Development Tools**
+### **Development**
 - **XAMPP** - Local development environment
 - **Git** - Version control
 - **npm** - Frontend package management
@@ -90,197 +145,91 @@ HTMLCamp is an advanced web development learning platform that combines traditio
 
 ## 📸 Screenshots
 
-### Homepage
-![Homepage](screenshots/homepage.png)
-*Modern landing page with course overview and quick navigation*
+### Live Platform Interface
 
-### Dashboard Analytics
-![Dashboard](screenshots/dashboard.png)
-*Comprehensive progress tracking with interactive charts and insights*
+> 🌐 **See it yourself**: [htmlcamp.free.nf](https://htmlcamp.free.nf/)
 
-### Monaco Code Editor
-![Editor](screenshots/editor.png)
-*Professional-grade code editor with live preview and console*
+*Screenshots showcase actual platform features from the live deployment*
 
-### AI Chat Assistant
-![AI Assistant](screenshots/ai-chat.png)
-*Intelligent coding help powered by CodeLlama*
+---
 
-### Course Catalog
-![Courses](screenshots/courses.png)
-*Organized learning paths across multiple technologies*
+## 🏗️ Architecture Overview
 
-### Exercise System
-![Exercises](screenshots/exercises.png)
-*Interactive coding challenges with instant feedback*
+### System Design
+
+```
+┌─────────────────────────────────────┐
+│         Client Layer                 │
+│  (Browser / Mobile / Tablet)        │
+└────────────┬────────────────────────┘
+             │
+┌────────────▼────────────────────────┐
+│      Application Layer               │
+│  ┌──────────────────────────────┐  │
+│  │  PHP Backend                  │  │
+│  │  - MVC Architecture           │  │
+│  │  - RESTful API                │  │
+│  │  - Session Management         │  │
+│  └──────────────────────────────┘  │
+│                                      │
+│  ┌──────────────────────────────┐  │
+│  │  Frontend (JavaScript)        │  │
+│  │  - Monaco Editor              │  │
+│  │  - Chart.js Analytics         │  │
+│  │  - AJAX Communication         │  │
+│  └──────────────────────────────┘  │
+└────────────┬────────────────────────┘
+             │
+┌────────────▼────────────────────────┐
+│         Data Layer                   │
+│  - MySQL 8.0 Database               │
+│  - File-based Caching               │
+│  - Session Storage                  │
+└──────────────────────────────────────┘
+```
+
+**Detailed Documentation**: [Architecture Guide](docs/ARCHITECTURE.md)
 
 ---
 
 ## 💡 Core Functionality
 
-### Learning System
+### Learning System Flow
 ```
-Student Journey:
 1. Browse course catalog by technology
 2. Enroll in structured learning path
-3. Complete interactive lessons
+3. Complete interactive lessons with code examples
 4. Practice with coding exercises
-5. Track progress on dashboard
-6. Earn points and achievements
-7. Get AI assistance when stuck
+5. Track progress on analytics dashboard
+6. Earn points and unlock achievements
+7. Get AI assistance when needed
 ```
 
 ### AI Assistant Capabilities
-- **Code Explanation**: Break down complex code into understandable parts
-- **Error Debugging**: Identify and explain common coding mistakes
-- **Best Practices**: Suggest improvements and industry standards
-- **Code Generation**: Help write boilerplate and common patterns
-- **Concept Clarification**: Explain programming concepts in simple terms
+- **Code Explanation**: Break down complex code
+- **Error Debugging**: Identify and explain mistakes
+- **Best Practices**: Suggest improvements
+- **Code Generation**: Help with boilerplate
+- **Concept Clarification**: Explain programming concepts
 
 ### Exercise System
-- **Multiple Choice Questions**: Test theoretical knowledge
-- **Code Completion**: Fill in missing code segments
-- **Bug Fixing**: Identify and correct errors
-- **Project Challenges**: Build complete features
-- **Automated Testing**: Instant feedback on solutions
+- Multiple choice questions
+- Code completion challenges
+- Bug fixing exercises
+- Project-based challenges
+- Automated testing with instant feedback
 
 ---
 
-## 🎨 Design Philosophy
+## 📊 Platform Statistics
 
-The platform emphasizes a clean, modern interface that minimizes distractions and maximizes focus on learning:
-
-- **Minimalist UI**: Clear hierarchy and intuitive navigation
-- **Dark Mode Support**: Reduce eye strain during extended coding sessions
-- **Responsive Design**: Seamless experience across all devices
-- **Accessibility**: WCAG 2.1 compliant for inclusive learning
-- **Performance**: Optimized loading times and smooth interactions
-
----
-
-## 📈 Project Architecture
-
-### Database Schema
-```sql
-Core Entities:
-- users (authentication & profiles)
-- courses (curriculum structure)
-- lessons (learning content)
-- exercises (practice challenges)
-- user_progress (completion tracking)
-- leaderboard (gamification)
-- ai_chat_messages (conversation history)
-- badges (achievements)
-```
-
-### API Endpoints
-```
-Authentication:
-POST /api/login
-POST /api/register
-GET  /api/logout
-
-Learning:
-GET  /api/courses
-GET  /api/lessons/:id
-POST /api/complete-lesson
-POST /api/submit-exercise
-
-AI Assistant:
-POST /api/chat
-GET  /api/chat/history
-
-Analytics:
-GET  /api/analytics/user
-GET  /api/progress
-```
-
----
-
-## 🔍 Code Snippets
-
-### AI Chat Integration
-```javascript
-// Real-time AI assistance with context awareness
-async function sendMessage(message) {
-    const response = await fetch('/api/chat', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-            message: message,
-            context: getCurrentCourse()
-        })
-    });
-    
-    const data = await response.json();
-    displayAIResponse(data.response);
-}
-```
-
-### Progress Tracking Algorithm
-```php
-// Calculate comprehensive user progress metrics
-function calculateUserProgress($userId) {
-    $metrics = [
-        'lessons_completed' => getLessonsCompleted($userId),
-        'exercises_solved' => getExercisesSolved($userId),
-        'total_points' => getTotalPoints($userId),
-        'current_streak' => calculateStreak($userId),
-        'mastery_level' => calculateMasteryLevel($userId)
-    ];
-    
-    return $metrics;
-}
-```
-
-### Monaco Editor Setup
-```javascript
-// Professional code editor initialization
-monaco.editor.create(document.getElementById('editor'), {
-    value: defaultCode,
-    language: 'javascript',
-    theme: 'vs-dark',
-    automaticLayout: true,
-    minimap: { enabled: true },
-    fontSize: 14,
-    lineNumbers: 'on',
-    roundedSelection: false,
-    scrollBeyondLastLine: false
-});
-```
-
-*For more code examples, see the [code-snippets](code-snippets/) directory.*
-
----
-
-## 🚀 Development Roadmap
-
-### ✅ Completed Features (v1.5)
-- [x] User authentication and authorization
-- [x] Course and lesson management system
-- [x] Interactive code editor with Monaco
-- [x] AI chat assistant integration
-- [x] Progress tracking and analytics
-- [x] Gamification system
-- [x] Responsive design
-- [x] Dark mode support
-
-### 🔄 In Progress (v2.0)
-- [ ] Advanced RAG system for contextual AI
-- [ ] Collaborative coding features
-- [ ] Video lesson integration
-- [ ] Mobile app (React Native)
-- [ ] Advanced analytics dashboard
-- [ ] Certificate generation system
-
-### 📋 Planned Features (v2.5+)
-- [ ] Live coding sessions
-- [ ] Peer code review system
-- [ ] Integration with GitHub
-- [ ] Advanced project templates
-- [ ] Multi-language support
-- [ ] Instructor dashboard
-- [ ] Payment integration for premium content
+- **9 Technologies**: HTML, CSS, JavaScript, PHP, Python, React, Node.js, SQL, Git
+- **46+ Courses**: Beginner to Advanced levels
+- **200+ Lessons**: Comprehensive learning content
+- **150+ Exercises**: Hands-on practice challenges
+- **AI-Powered**: Intelligent coding assistance
+- **Multi-device**: Fully responsive design
+- **🌐 Live Demo**: **[htmlcamp.free.nf](https://htmlcamp.free.nf/)**
 
 ---
 
@@ -297,18 +246,111 @@ This platform was created as part of an advanced web development curriculum, dem
 - **Scalable architecture** design
 - **User experience** optimization
 
-The project showcases real-world application development practices including version control, testing, documentation, and deployment strategies.
+The project showcases real-world application development including version control, documentation, testing strategies, and deployment.
 
 ---
 
-## 📊 Platform Statistics
+## 🚀 Development Roadmap
 
-- **9 Technologies**: HTML, CSS, JavaScript, PHP, Python, React, Node.js, SQL, Git
-- **46+ Courses**: Beginner to Advanced levels
-- **200+ Lessons**: Comprehensive learning content
-- **150+ Exercises**: Hands-on practice challenges
-- **AI-Powered**: Intelligent coding assistance
-- **Multi-device**: Fully responsive design
+### ✅ Completed Features (v1.5)
+- [x] User authentication and authorization
+- [x] Course and lesson management system
+- [x] Interactive code editor with Monaco
+- [x] AI chat assistant integration
+- [x] Progress tracking and analytics
+- [x] Gamification system
+- [x] Responsive design
+- [x] Dark mode support
+- [x] Live deployment
+
+### 🔄 In Progress (v2.0)
+- [ ] Advanced RAG system for contextual AI
+- [ ] Collaborative coding features
+- [ ] Video lesson integration
+- [ ] Mobile app (React Native)
+- [ ] Advanced analytics dashboard
+- [ ] Certificate generation system
+
+### 📋 Planned Features (v2.5+)
+- [ ] Live coding sessions
+- [ ] Peer code review system
+- [ ] GitHub integration
+- [ ] Advanced project templates
+- [ ] Multi-language support
+- [ ] Instructor dashboard
+- [ ] Premium subscription system
+
+---
+
+## 🚀 Deployment
+
+### Live Instance
+
+**Platform URL**: **[https://htmlcamp.free.nf/](https://htmlcamp.free.nf/)**
+
+### Current Infrastructure
+- **Hosting**: InfinityFree (Demonstration)
+- **Database**: MySQL 8.0 (Remote)
+- **PHP Version**: 8.2+
+- **SSL**: Included
+
+### Production Considerations
+
+For full production deployment, the platform would utilize:
+- Dedicated VPS or cloud hosting
+- Redis caching layer
+- CDN for static assets
+- Load balancing for scalability
+- Automated backups
+- Comprehensive monitoring
+- Database replication
+
+---
+
+## 💻 Code Samples
+
+### AI Chat Integration
+```javascript
+async function sendMessage(message) {
+    const response = await fetch('/api/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            message: message,
+            context: getCurrentCourse()
+        })
+    });
+    
+    const data = await response.json();
+    displayAIResponse(data.response);
+}
+```
+
+### Progress Analytics
+```php
+function calculateUserProgress($userId) {
+    $metrics = [
+        'lessons_completed' => getLessonsCompleted($userId),
+        'exercises_solved' => getExercisesSolved($userId),
+        'total_points' => getTotalPoints($userId),
+        'current_streak' => calculateStreak($userId),
+        'mastery_level' => calculateMasteryLevel($userId)
+    ];
+    
+    return $metrics;
+}
+```
+
+**More examples**: [Code Snippets Directory](code-snippets/)
+
+---
+
+## 📚 Documentation
+
+- **[Architecture Guide](docs/ARCHITECTURE.md)** - System design and structure
+- **[Technology Stack](docs/TECHNOLOGIES.md)** - Detailed tech documentation
+- **[Code Samples](code-snippets/)** - Implementation examples
+- **[Screenshots](screenshots/)** - Visual showcase
 
 ---
 
@@ -316,12 +358,13 @@ The project showcases real-world application development practices including ver
 
 **© 2025 HTMLCamp. All Rights Reserved.**
 
-This project is **proprietary software** and not open source. The code and materials are protected under copyright law. This repository is for **portfolio and educational demonstration purposes only**.
+This project is **proprietary software** and not open source. This repository is for **portfolio and educational demonstration purposes only**.
 
 ### Permissions:
 - ✅ View this repository
 - ✅ Reference in portfolios and resumes
 - ✅ Learn from architectural decisions
+- ✅ Test the [live demo](https://htmlcamp.free.nf/)
 
 ### Restrictions:
 - ❌ No commercial use
@@ -333,51 +376,40 @@ For collaboration inquiries or licensing questions, please contact the developme
 
 ---
 
-## 👥 Development Team
-
-This platform is being actively developed and improved by a dedicated team of developers committed to creating the best possible learning experience.
+## 👥 Development
 
 **Developed during the 2025-2026 academic year for educational purposes.**
 
----
-
-## 📬 Contact & Support
-
-For questions about this project or collaboration opportunities:
-
-- **GitHub**: [View this repository](https://github.com/yourusername/htmlcamp)
-- **Email**: Available upon request
-- **Documentation**: See [docs](docs/) folder
+The platform demonstrates advanced web development techniques and continues to evolve with ongoing improvements and feature additions.
 
 ---
 
 ## 🙏 Acknowledgments
 
-Special thanks to the following technologies and services that made this project possible:
-
 - **Monaco Editor** by Microsoft
 - **Chart.js** for data visualization
 - **HuggingFace** for AI model hosting
 - **CodeLlama** for intelligent assistance
-- **PHP & MySQL** communities for excellent documentation
+- **InfinityFree** for demonstration hosting
 
 ---
 
-## 📝 Project Notes
+## 📬 Contact
 
-This repository represents a **showcase of the platform**, not the complete codebase. The actual application includes:
+For questions about this project or collaboration opportunities:
 
-- Proprietary business logic
-- Custom algorithms and optimizations
-- Production configurations
-- Database migrations and seeds
-- Testing suites
-- Deployment scripts
-
-The code snippets and documentation provided here demonstrate the technical capabilities and architectural decisions without exposing sensitive implementation details.
+- **Live Demo**: [htmlcamp.free.nf](https://htmlcamp.free.nf/)
+- **GitHub**: This repository
+- **Documentation**: [docs](docs/) folder
 
 ---
 
-**Made with ❤️ and countless hours of coding**
+<div align="center">
 
-*Last Updated: January 2025*
+**🌐 [Try HTMLCamp Live](https://htmlcamp.free.nf/) | 📸 [View Screenshots](screenshots/) | 📚 [Read Docs](docs/)**
+
+*Made with ❤️ and countless hours of coding*
+
+**Last Updated**: January 2025
+
+</div>
