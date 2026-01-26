@@ -2,6 +2,12 @@
 
 Visual showcase of HTMLCamp's features and user interface.
 
+> **💡 See it live**: [htmlcamp.free.nf](https://htmlcamp.free.nf/)
+
+All screenshots below are from the actual live platform.
+
+---
+
 ## Homepage
 ![Homepage](homepage.png)
 The landing page featuring course overview, technology cards, and quick navigation to learning paths.
