@@ -7,6 +7,7 @@
 [![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-htmlcamp.free.nf-brightgreen?style=for-the-badge)](https://htmlcamp.free.nf/)
 [![Status](https://img.shields.io/badge/Status-In_Development-blue?style=for-the-badge)](#)
 [![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)](LICENSE)
+[![CI](https://github.com/y-zahidi/HTMLCamp/actions/workflows/ci.yml/badge.svg)](https://github.com/y-zahidi/HTMLCamp/actions/workflows/ci.yml)
 
 **A modern, full-featured e-learning platform designed to teach web development through interactive lessons, real-time code editing, and AI-powered assistance.**
 

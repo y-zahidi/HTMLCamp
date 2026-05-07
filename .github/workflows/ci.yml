@@ -1,0 +1,97 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  php:
+    name: PHP syntax (lint-only)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up PHP 8.2
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.2"
+          coverage: none
+          tools: none
+
+      - name: Lint every .php file with `php -l`
+        run: |
+          fail=0
+          while IFS= read -r -d '' f; do
+            echo "::group::$f"
+            if ! php -l "$f"; then
+              fail=1
+            fi
+            echo "::endgroup::"
+          done < <(find . -type f -name '*.php' -not -path './.git/*' -print0)
+          exit "$fail"
+
+  javascript:
+    name: JavaScript syntax (Node --check)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Syntax-check every .js file with `node --check`
+        run: |
+          fail=0
+          while IFS= read -r -d '' f; do
+            echo "::group::$f"
+            if ! node --check "$f"; then
+              fail=1
+            fi
+            echo "::endgroup::"
+          done < <(find . -type f -name '*.js' -not -path './.git/*' -not -path './node_modules/*' -print0)
+          exit "$fail"
+
+  markdown:
+    name: Markdown link check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install markdown-link-check
+        run: npm install --global markdown-link-check@3.12.2
+
+      - name: Check links in every .md file (skip external 4xx/5xx)
+        run: |
+          cat > .mlc.json <<'JSON'
+          {
+            "ignorePatterns": [
+              { "pattern": "^https?://htmlcamp\\.free\\.nf" }
+            ],
+            "retryOn429": true,
+            "retryCount": 2,
+            "fallbackRetryDelay": "30s",
+            "aliveStatusCodes": [200, 206, 301, 302, 304, 403, 429]
+          }
+          JSON
+
+          fail=0
+          while IFS= read -r -d '' f; do
+            echo "::group::$f"
+            if ! markdown-link-check --quiet --config .mlc.json "$f"; then
+              fail=1
+            fi
+            echo "::endgroup::"
+          done < <(find . -type f -name '*.md' -not -path './.git/*' -not -path './node_modules/*' -print0)
+          exit "$fail"
