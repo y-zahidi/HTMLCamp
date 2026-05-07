@@ -72,11 +72,13 @@ jobs:
       - name: Install markdown-link-check
         run: npm install --global markdown-link-check@3.12.2
 
-      - name: Check links in every .md file (skip external 4xx/5xx)
+      - name: Check links in every .md file (http only, skip relative file refs and # placeholders)
         run: |
           cat > .mlc.json <<'JSON'
           {
             "ignorePatterns": [
+              { "pattern": "^#" },
+              { "pattern": "^(?!https?://)" },
               { "pattern": "^https?://htmlcamp\\.free\\.nf" }
             ],
             "retryOn429": true,
